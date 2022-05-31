@@ -36,6 +36,14 @@ header {
     color: #0d6efd;   
   }
 
+  .navbar-toggler-icon,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+  }
+
 iframe {
     width: 50%;    
 }
@@ -43,4 +51,53 @@ iframe {
 html, body {
     margin: 0;
     height: 100%;
+}
+
+h1 {
+  font-weight: 6  00;
+}
+
+.fa-canadian-maple-leaf {
+  color: #e82042;
+}
+
+#introduction {
+  max-width: 500px;
+  padding-bottom: 50px;
+
+}
+
+#main-container{
+  margin-top: 100px;  
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+
+#profile-picture {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  margin-left: 5%;
+}
+
+.description {
+  font-size: 1.25rem;
+}
+
+#email {
+  text-decoration: underline;
+
 }
