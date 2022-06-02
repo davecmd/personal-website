@@ -7,33 +7,40 @@
    <link href="css/reset.css" rel="stylesheet" type="text/css">
    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
    <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <link href="hamburgers.css" rel="stylesheet">
+
+   <script src="scripts.js"></script>
+   <script src="bootstrap.js"></script>
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
-   <script src="https://kit.fontawesome.com/a6be3b9791.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-   <header class="fixed-header">
-      <nav class="navbar navbar-expand-xl navbar-light" id="navigation">
+   <header class="fixed-header sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" id="navigation">
          <div class="container-fluid">
            <a class="navbar-brand" id="nav-name" href="#">David Tan</a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+           <button class="hamburger hamburger--collapse navbar-toggler" id="hamburger-menu"  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleHamburgerMenu()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
            <div class="collapse navbar-collapse" id="navbarNavDropdown">
              <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/resume.html ">Resume  </a>
+                <a class="nav-link" aria-current="page" href="/resume.html  ">Resume  </a>
               </li>
+              <div class="dropdown-divider"></div>
                <li class="nav-item">
                  <a class="nav-link" aria-current="page" href="https://github.com/davecmd" target="_blank">Github</a>
                </li>
+               <div class="dropdown-divider"></div>
                <li class="nav-item">
                  <a class="nav-link" href="#">LinkedIn</a>
                </li>
+               <div class="dropdown-divider"></div>
                <li class="nav-item">
                  <a class="nav-link" href="mailto:dave.tan.work@gmail.com">Email Me!</a>
                </li>
@@ -46,13 +53,16 @@
     <div class="container" id="main-container">
       <div id="introduction">
         <h1>Hey, I'm David! </h1>
-        <p class="description">A 3rd year UofT CS student specializing in software engineering from a small town called Fergus CA. <i class="fa-brands fa-canadian-maple-leaf"></i>  I'm currently working at BlueCat Networks as a Co-op  </p>
+        <p class="description">I'm 3rd year UofT CS student from a small town called Fergus CA. 
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z"/></svg>
+          I'm currently working at BlueCat Networks as a software engineer Co-op </p>
         <a id="email" href="mailto:dave.tan.work@gmail.com">dave.tan.work@gmail.com</a>
       </div>
       <div >
         <img src="/profile pic.jpg" id="profile-picture" alt="It's me, David Tan!">
       </div>
-      
+    </div>
+    <div  class="container" id="featured-work"><h2>Featured Work</h2>
     </div>
    </main>
    <footer>

@@ -7,32 +7,43 @@
    <link href="css/reset.css" rel="stylesheet" type="text/css">
    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
    <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="scripts.js"></script>
+
+   <script src="bootstrap.js"></script>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+   <link href="hamburgers.css" rel="stylesheet">
+
+
 </head>
 
 <body>
    <header class="fixed-header">
-      <nav class="navbar navbar-expand-sm navbar-light" id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
          <div class="container-fluid">
-           <a class="navbar-brand" id="nav-name" href="/index.html">David Tan</a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+           <a class="navbar-brand" id="nav-name" href="index.html">David Tan</a>
+           <button class="hamburger hamburger--collapse navbar-toggler" id="hamburger-menu"  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
            <div class="collapse navbar-collapse" id="navbarNavDropdown">
              <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="https://github.com/davecmd" target="_blank">Resume  </a>
+                <a class="nav-link" aria-current="page" href="/resume.html  ">Resume  </a>
               </li>
+              <div class="dropdown-divider"></div>
                <li class="nav-item">
                  <a class="nav-link" aria-current="page" href="https://github.com/davecmd" target="_blank">Github</a>
                </li>
+               <div class="dropdown-divider"></div>
                <li class="nav-item">
                  <a class="nav-link" href="#">LinkedIn</a>
                </li>
+               <div class="dropdown-divider"></div>
                <li class="nav-item">
-                 <a class="nav-link" href="mailto:dave.tan.work@gmail.com">Hire Me!</a>
+                 <a class="nav-link" href="mailto:dave.tan.work@gmail.com">Email Me!</a>
                </li>
              </ul>
            </div>
@@ -40,11 +51,6 @@
        </nav>
    </header>
    <iframe id="resume" src="https://docs.google.com/gview?url=https://github.com/davecmd/resume/raw/main/Resume_David_Tan_2022.docx &embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
-   
-   <footer>
-      <nav class="">
-      </nav>
-   </footer>
 </body>
 
 </html>
