@@ -22,7 +22,7 @@ a:link {
 
 svg {
   width: 1.3rem;
-  fill: #e82042;
+  fill: #212529;  
   padding-bottom: 4px;
 }
 
@@ -69,6 +69,7 @@ header {
   .navbar-toggler-icon:focus {
       outline: none;
       box-shadow: none;
+
   }
 
   .navbar .navbar-collapse .nav-item {
@@ -116,6 +117,10 @@ h1 {
   background-size: cover;
 }
 
+#canada-leaf {
+  fill: #D80621;
+}
+
 .description {
   margin-top: 20px;
   font-size: 1.25rem;
@@ -155,6 +160,33 @@ h1 {
   opacity: 1;
 }
 
+/* Modal */
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
+}
+
+.modal-card {
+  position:relative;
+
+}
+
+.modal-button {
+  position: absolute;
+  top: 5%;
+  left: 95%;
+}
+
+.modal-body {
+  margin: 10px 50px;
+}
+
+.modal-title {
+  font-weight: 600;
+}
 
 @media (max-width: 1000px) {
   .container{
@@ -165,7 +197,89 @@ h1 {
   }
 
   .mobile-center{
-    text-align: center  
+    text-align: center;  
+  }
+
+  .card {
+    height: 350px;
   }
   
+
+  .modal-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    fill: black;
+  }
+
+
+  .modal-body {
+    margin: 10px 20px;
+  } 
+}
+
+@media (max-width: 700px) {
+  .container{
+    margin-top: 50px;  
+    margin-bottom: 150px;
+    padding-right: min(75px, 10%);
+   padding-left: min(75px, 10%);
+  }
+
+  .card {
+    height: 250px;
+  }
+  
+}
+
+
+@media (max-width: 1300px) {
+  .nav-item {
+    padding: 0px 10px;
+}
+}
+
+
+
+
+nav a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+}
+
+.go a:before,
+.go a:after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.go a:before {
+  margin-right: 8px;
+  content: '[';
+  -webkit-transform: translate(20px);
+  -moz-transform: translate(20px);
+  transform: translate(20px);
+}
+
+.go a:after {
+  margin-left: 8px;
+  content: ']';
+  -webkit-transform: translate(-20px);
+  -moz-transform: translate(-20px);
+  transform: translate(-20px);
+}
+
+.go a:hover:before,
+.go a:hover:after,
+.go a:focus:before,
+.go a:focus:after {
+  opacity: 1;
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  transform: translate(0px);
 }
