@@ -6,3 +6,10 @@ function toggleHamburgerMenu() {
   $(document).ready(function() {
     $("#MyModal").modal();
   });	
+
+  function toggleTheme() {
+    var element = document.getElementById("toggle-theme");
+    document.body.classList.toggle("dark-theme");
+    }
+  
+  

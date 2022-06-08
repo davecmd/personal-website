@@ -68,6 +68,11 @@
                   >Email Me!</a
                 >
               </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <button type="button" class="btn btn-light" id="toggle-theme" onclick="toggleTheme()">TT</button>
+
+              </li>
             </ul>
           </div>
         </div>
@@ -80,7 +85,7 @@
             <div id="introduction">
               <h1>Hey, I'm David!</h1>
               <p class="description">
-                I'm 3rd year UofT CS student from a small town called Fergus CA.
+                I'm a 3rd year UofT CS student from a small town called Fergus CA.
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="canada-leaf">
                   <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                   <path
@@ -90,8 +95,8 @@
                 I'm currently working at BlueCat Networks as a software engineer
                 Co-op
               </p>
-              <a id="email" href="mailto:dave.tan.work@gmail.com"
-                >dave.tan.work@gmail.com</a
+              <div id="email" href="mailto:dave.tan.work@gmail.com"
+                >dave.tan.work@gmail.com</div 
               >
             </div>
           </div>
@@ -108,11 +113,10 @@
         <h2 id="featured-work">Featured Work</h2>
         <div class="row gx-4 gy-4">
           <div class="col-lg ">
-            <div class="card text-white" id="placeholder-card"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="card text-white" id="placeholder-card"  data-bs-toggle="modal" data-bs-target="#modal-1">
               <img src="/placeholder.JPG" class="card-img work-card-image" alt="..." />
               <div class="card-img-overlay">  
                 <h2 class="modal-title card-title">Ampact</h2>
-
               </div>
             </div>
           </div>
@@ -134,12 +138,12 @@
     </main> 
     <footer>
       <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-card">
         <img src="/placeholder.JPG" class="work-card-image" alt="..." />
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="close modal-button" data-bs-dismiss="modal" aria-label="Close"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="close modal-button" id="modal-close" data-bs-dismiss="modal" aria-label="Close"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/>
         </svg>
       </div>
 
