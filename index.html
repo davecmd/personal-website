@@ -17,6 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a6be3b9791.js" crossorigin="anonymous"></script>
+    <link rel="D icon" href="D icon clean.png">
   </head>
 
   <body>
@@ -45,8 +47,7 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="/resume.html  "
-                  >Resume
-                </a>
+                  >Resume</a>
               </li>
               <div class="dropdown-divider"></div>
               <li class="nav-item">
@@ -69,9 +70,13 @@
                 >
               </li>
               <div class="dropdown-divider"></div>
-              <li class="nav-item">
-                <button type="button" class="btn btn-light" id="toggle-theme" onclick="toggleTheme()">TT</button>
-
+              <li class="nav-item" id="toggle-wrapper">
+                <input type="checkbox" class="checkbox" id="toggle-theme" onclick="toggleTheme()">
+                <label for="toggle-theme" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
               </li>
             </ul>
           </div>
@@ -83,7 +88,7 @@
         <div class="row">
           <div class="col-lg">
             <div id="introduction">
-              <h1>Hey, I'm David!</h1>
+              <h1>Hey, I'm David! <span class="wave">👋</span></h1>
               <p class="description">
                 I'm a 3rd year UofT CS student from a small town called Fergus CA.
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="canada-leaf">
@@ -95,8 +100,8 @@
                 I'm currently working at BlueCat Networks as a software engineer
                 Co-op
               </p>
-              <div id="email" href="mailto:dave.tan.work@gmail.com"
-                >dave.tan.work@gmail.com</div 
+              <a id="email" href="mailto:dave.tan.work@gmail.com"
+                >dave.tan.work@gmail.com</a
               >
             </div>
           </div>
@@ -151,13 +156,9 @@
         <h2 class="modal-title">Ampact</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nibh, aliquet id suscipit vel, accumsan ut tortor. Donec rhoncus orci nulla, in accumsan arcu consectetur in. Cras porttitor fermentum lacus ullamcorper condimentum. Curabitur fermentum rutrum consequat. Sed pulvinar aliquam dictum. Proin lacinia iaculis quam. Maecenas a vulputate justo.
 
-          Sed efficitur imperdiet eros non semper. Phasellus convallis metus a orci feugiat venenatis. Donec non arcu et turpis feugiat lacinia. Donec nisi nulla, fermentum at elit vel, aliquet lobortis enim. Integer turpis nisi, posuere nec fermentum at, imperdiet quis eros. Pellentesque suscipit ex nisi, eget viverra lorem ullamcorper a. Nam tempor, justo eget dignissim vehicula, ipsum tortor tristique orci, a venenatis purus nisi luctus mauris. Aenean ultricies tempor malesuada. Pellentesque ullamcorper vehicula augue, vel placerat est sagittis non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sit amet vehicula orci, et viverra urna. Praesent commodo ipsum eros, sed consequat ex convallis at. Etiam gravida lectus diam, quis mattis nibh rutrum in. Praesent lobortis, magna ac vestibulum ullamcorper, nisi felis efficitur tellus, non tempus quam justo at sem.
+          Sed efficitur imperdiet eros non semper. Phasellus convallis metus a orci feugiat venenatis. Donec non arcu et turpis feugiat lacinia. Donec nisi nulla, ferm.
           
-          Fusce neque massa, aliquam sed quam in, mollis scelerisque leo. Aliquam tristique posuere ex ac ornare. Fusce imperdiet nulla non ligula ornare consequat. Nunc semper sodales purus, id consectetur mauris elementum sed. Proin fermentum aliquam pellentesque. Phasellus consequat finibus eleifend. Proin eget ultricies arcu.
-          
-          Suspendisse potenti. Nulla facilisi. Praesent id porta metus. Suspendisse ullamcorper ligula ut sem ultricies tempus. Ut tempor odio eu diam convallis facilisis. In varius arcu vitae mauris cursus porttitor. Nunc nisl orci, pulvinar sed dapibus sit amet, tempus ac tellus. Duis eu vulputate elit. Pellentesque aliquam urna a nibh semper blandit. Pellentesque neque libero, feugiat et nibh nec, fringilla facilisis orci. Duis nec quam in nibh interdum fringilla sit amet quis dui. Mauris a neque leo. Fusce mi odio, finibus id elit in, finibus dapibus urna.
-          
-          Donec nibh diam, sagittis quis elementum quis, semper sed ex. Suspendisse luctus orci vel gravida malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id lacus interdum, ultricies turpis eget, tincidunt tortor. Maecenas commodo bibendum lorem a gravida. Vivamus mollis, nisi et placerat pulvinar, lectus sem mollis libero, a tempus augue diam id massa.</p>
+         </p>
       </div>
 
     </div>

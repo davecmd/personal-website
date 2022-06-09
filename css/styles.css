@@ -1,16 +1,17 @@
+/* General */
 * {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-color);
 }
 
 :root {
   --primary-color: white;
-  --secondary-color: #212529; 
+  --secondary-color: #212529;
 }
 
 .dark-theme {
   --primary-color: #212529;
-  --secondary-color: white; 
+  --secondary-color: white;
 }
 
 ::selection {
@@ -19,6 +20,7 @@
 
 body {
   background-color: var(--primary-color);
+  transition: background-color 0.3s linear;
 }
 
 footer {
@@ -26,10 +28,10 @@ footer {
 }
 
 a:link {
-    color: var(--secondary-color);
-    background-color: transparent;
-    text-decoration: none;
-  }
+  color: var(--secondary-color);
+  background-color: transparent;
+  text-decoration: none;
+}
 
 .navbar-toggler {
   border: none;
@@ -37,15 +39,16 @@ a:link {
 
 svg {
   width: 1.3rem;
-  fill:  white;
+  fill: white;
   padding-bottom: 4px;
 }
 
 header {
-    border-bottom: 1.75px solid var(--secondary-color);
-    font-weight: 700;
-    font-size: 1.1rem;
-    background-color: var(--primary-color);
+  border-bottom: 1.75px solid var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s linear;
 }
 
 #navigation {
@@ -53,66 +56,69 @@ header {
 }
 
 #nav-name {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #nav-name:visited {
   color: var(--secondary-color);
 }
 
-#nav-name:hover, #nav-name:active {
+#nav-name:hover,
+#nav-name:active {
   color: #0d6efd;
 }
 
 .nav-item {
-    padding: 0px 20px;
+  padding: 0px 20px;
 }
 
 .navbar {
   padding: 10px 10%;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-brand{
-    color: var(--secondary-color);
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    color: var(--secondary-color);
-  }
-  .navbar-light .navbar-nav .nav-link:hover, a:hover {
-    color: #0d6efd;   
-  }
-
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
-
-  .navbar-toggler-icon,
-  .navbar-toggler:focus,
-  .navbar-toggler:active,
-  .navbar-toggler-icon:focus {
-      outline: none;
-      box-shadow: none;
-
-  }
-
-  .navbar .navbar-collapse .nav-item {
-    padding-top: 10px;
-    border-bottom: 1px var(--secondary-color);
-  }
-
-  .dropdown-divider {
-    border-color: var(--secondary-color)
-  }
-  
-
-iframe {
-    width: 50%;    
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-brand {
+  color: var(--secondary-color);
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
+.navbar-light .navbar-nav .nav-link {
+  color: var(--secondary-color);
+}
+.navbar-light .navbar-nav .nav-link:hover,
+a:hover {
+  color: #0d6efd;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-toggler-icon,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-collapse .nav-item {
+  padding-top: 10px;
+  border-bottom: 1px var(--secondary-color);
+}
+
+.dropdown-divider {
+  border-color: var(--secondary-color);
+}
+
+iframe {
+  width: 50%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
 
 h1 {
@@ -125,12 +131,12 @@ h1 {
   margin-right: 5%;
 }
 
-#main-container{
+#main-container {
   justify-content: center;
 }
 
 .container {
-  margin-top: 150px; 
+  margin-top: 150px;
   margin-bottom: 300px;
 }
 
@@ -146,7 +152,7 @@ h1 {
 }
 
 #canada-leaf {
-  fill: #D80621;
+  fill: #d80621;
 }
 
 .description {
@@ -162,11 +168,10 @@ h1 {
 
 #email {
   box-shadow: inset 0 0 0 0 var(--secondary-color);
-  color: var(--secondary-color) ;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  
+  color: var(--secondary-color);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #email:hover {
   box-shadow: inset 300px 0 0 0 var(--secondary-color);
@@ -182,20 +187,22 @@ h1 {
   height: 400px;
 }
 
-.row { /* figure out why I can't use gutter y gap */
+.row {
+  /* figure out why I can't use gutter y gap */
   margin-bottom: 25px;
 }
 
 .work-card-image {
- height:100%; width:100%;
+  height: 100%;
+  width: 100%;
 }
 
-.card-img-overlay{
+.card-img-overlay {
   opacity: 0;
   transition: 0.2s;
 }
 
-#placeholder-card:hover > .card-img-overlay{
+#placeholder-card:hover > .card-img-overlay {
   display: block;
   background-color: rgb(126, 196, 207, 0.7);
   opacity: 1;
@@ -211,8 +218,7 @@ h1 {
 }
 
 .modal-card {
-  position:relative;
-
+  position: relative;
 }
 
 .modal-button {
@@ -231,62 +237,14 @@ h1 {
 }
 
 #modal-close {
-  fill: #212529;  
+  fill: #212529;
 }
 
-@media (max-width: 1000px) {
-  .container{
-    margin-top: 50px;  
-    margin-bottom: 150px;
-    padding-right: min(75px, 10%);
-   padding-left: min(75px, 10%);
-  }
-
-  .mobile-center{
-    text-align: center;  
-  }
-
-  .card {
-    height: 350px;
-  }
-  
-
-  .modal-button {
-    position: absolute;
-    top: 5%;
-    left: 90%;
-  }
-
-
-  .modal-body {
-    margin: 10px 20px;
-  } 
+.modal-body {
+  margin: 5px 30px;
 }
 
-@media (max-width: 700px) {
-  .container{
-    margin-top: 50px;  
-    margin-bottom: 150px;
-    padding-right: min(75px, 10%);
-   padding-left: min(75px, 10%);
-  }
-
-  .card {
-    height: 250px;
-  }
-  
-}
-
-
-@media (max-width: 1300px) {
-  .nav-item {
-    padding: 0px 10px;
-}
-}
-
-
-
-
+/* navigation menu animation */
 nav a {
   position: relative;
   display: inline-block;
@@ -305,7 +263,7 @@ nav a {
 
 .go a:before {
   margin-right: 8px;
-  content: '[';
+  content: "[";
   -webkit-transform: translate(20px);
   -moz-transform: translate(20px);
   transform: translate(20px);
@@ -313,7 +271,7 @@ nav a {
 
 .go a:after {
   margin-left: 8px;
-  content: ']';
+  content: "]";
   -webkit-transform: translate(-20px);
   -moz-transform: translate(-20px);
   transform: translate(-20px);
@@ -327,4 +285,149 @@ nav a {
   -webkit-transform: translate(0px);
   -moz-transform: translate(0px);
   transform: translate(0px);
+}
+
+/* theme toggle */
+* {
+  box-sizing: border-box;
+}
+
+.label {
+  display: flex;
+  height: 28px;
+  width: 54px;
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  position: relative;
+}
+
+.fa-moon {
+  color: #f6be00;
+}
+
+.fa-sun {
+  color: #f48037;
+}
+
+.ball {
+  background-color: white;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+  -mox-box-shadow: 0 0 3px white;
+  -webkit-box-shadow: 0 0 3px white;
+  box-shadow: 0 0 2px white;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+#toggle-theme:checked + .label .ball {
+  transform: translate(24.5px);
+  background-color: var(--primary-color);
+}
+
+#toggle-theme:checked + .label {
+  background-color: var(--secondary-color);
+}
+
+#toggle-wrapper {
+  margin: auto;
+}
+
+/* hand wave */
+.wave {
+  margin-left: 5px;
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.wave:hover {
+  animation-iteration-count: infinite; /* Never stop waving :) */
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Screen Responsiveness */
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-right: min(75px, 10%);
+    padding-left: min(75px, 10%);
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
+
+  .card {
+    height: 350px;
+  }
+
+  .modal-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+  }
+
+  .modal-body {
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding-right: min(75px, 10%);
+    padding-left: min(75px, 10%);
+  }
+
+  .card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-item {
+    padding: 0px 10px;
+  }
 }

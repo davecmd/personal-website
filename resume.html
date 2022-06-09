@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="hamburgers.css" rel="stylesheet" />
 
-<head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <link href="css/reset.css" rel="stylesheet" type="text/css">
-   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-   <link href="css/styles.css" rel="stylesheet" type="text/css">
-   <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
+    <script src="bootstrap.js"></script>
 
-   <script src="bootstrap.js"></script>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-   <link href="hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a6be3b9791.js" crossorigin="anonymous"></script>
 
+  </head>
 
-</head>
-
-<body>
-   <header class="fixed-header">
-      <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
-         <div class="container-fluid">
-           <a class="navbar-brand" id="nav-name" href="index.html">David Tan</a>
-           <button class="hamburger hamburger--collapse navbar-toggler" id="hamburger-menu"  data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+  <body>
+    <header class="fixed-header sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light navbar-fixed-top"
+        id="navigation"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" id="nav-name" href="/index.html">David Tan</a>
+          <button
+            class="hamburger hamburger--collapse navbar-toggler"
+            id="hamburger-menu"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="toggleHamburgerMenu()"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
-          </button>  
-           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-             <ul class="navbar-nav ms-auto">
+          </button>
+          <div class="collapse navbar-collapse go" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/resume.html  ">Resume  </a>
+                <a class="nav-link" aria-current="page" href="/resume.html  "
+                  >Resume</a>
               </li>
               <div class="dropdown-divider"></div>
-               <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="https://github.com/davecmd" target="_blank">Github</a>
-               </li>
-               <div class="dropdown-divider"></div>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">LinkedIn</a>
-               </li>
-               <div class="dropdown-divider"></div>
-               <li class="nav-item">
-                 <a class="nav-link" href="mailto:dave.tan.work@gmail.com">Email Me!</a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-   </header>
-   <iframe id="resume" src="https://docs.google.com/gview?url=https://github.com/davecmd/resume/raw/main/Resume_David_Tan_2022.docx &embedded=true" loading="eager" style="width:100%; height:100%;" frameborder="0"></iframe>
-</body>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="https://github.com/davecmd"
+                  target="_blank"
+                  >Github</a
+                >
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LinkedIn</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:dave.tan.work@gmail.com"
+                  >Email Me!</a
+                >
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item" id="toggle-wrapper">
+                <input type="checkbox" class="checkbox" id="toggle-theme" onclick="toggleTheme()">
+                <label for="toggle-theme" class="label">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <iframe id="resume" src="https://docs.google.com/gview?url=https://github.com/davecmd/resume/raw/main/Resume_David_Tan_2022.docx &embedded=true" loading="eager" style="width:100%; height:100%;" frameborder="0"></iframe>
 
+  </body>
 </html>
