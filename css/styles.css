@@ -12,6 +12,8 @@
   
 }
 
+
+
 :root {
   --primary-color: white;
   --secondary-color: #212529;
@@ -133,11 +135,13 @@ body {
 }
 
 h1 {
+  font-size: 2.75rem;
   font-weight: 600;
 }
 
+
 #introduction {
-  max-width: 500px;
+  max-width: 600px;
   padding-bottom: 50px;
   margin-right: 5%;
 }
@@ -147,7 +151,7 @@ h1 {
 }
 
 .container {
-  margin-top: 150px;
+  margin-top: 200px;
   margin-bottom: 300px;
 }
 
@@ -168,7 +172,7 @@ h1 {
 
 .description {
   margin-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 
 #email {
@@ -211,7 +215,7 @@ h1 {
 
 .card-img-overlay {
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.35s;
 }
 
 #placeholder-card:hover > .card-img-overlay {
@@ -321,7 +325,8 @@ nav a {
 }
 
 .fa-sun {
-  color: #f48037;
+  color: orange;
+  
 }
 
 .ball {
@@ -429,7 +434,7 @@ nav a {
 
 @media (max-width: 700px) {
   .container {
-    margin-top: 50px;
+    margin-top: 140px;
     margin-bottom: 150px;
     padding-right: min(75px, 10%);
     padding-left: min(75px, 10%);
