@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     {
       navLinks[i].classList.add('notransition');
     }
-   // document.getElementById("email").classList.add("notransition");
-    document.getElementById("toggle-theme").checked = true;
+   document.getElementById("ball").classList.add("notransition");
+  document.getElementById("toggle-theme").checked = true;
 
   } else {
     document.getElementById("toggle-theme").checked = false;
@@ -31,6 +31,8 @@ function toggleTheme() {
   var theme = getCookie("theme");
   document.body.classList.remove("notransition");
   document.getElementById("header").classList.remove("notransition");  
+  document.getElementById("ball").classList.remove("notransition");
+
   var navLinks = document.getElementsByClassName("nav-link");
     for(var i = 0; i < navLinks.length; i++)
     {

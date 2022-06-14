@@ -9,6 +9,7 @@
   -moz-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+  
 }
 
 :root {
@@ -58,7 +59,7 @@ header {
 
 .fixed-header {
   background-color: var(--primary-color);
-  transition: background-color 0.3s linear;
+  transition: background-color 0.25s linear;
 }
 
 #navigation {
@@ -181,7 +182,7 @@ h1 {
   color: var(--secondary-color);
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: color 0.21s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 #email:hover {
   box-shadow: inset 300px 0 0 0 var(--secondary-color);
@@ -422,6 +423,8 @@ nav a {
   .modal-body {
     margin: 10px 20px;
   }
+
+
 }
 
 @media (max-width: 700px) {
@@ -439,6 +442,9 @@ nav a {
 
 @media (max-width: 1300px) {
   .nav-item {
-    padding: 0px 10px;
+    padding: 0px 9px;
   }
+  .container-fluid {
+    padding: 0;
+}
 }
