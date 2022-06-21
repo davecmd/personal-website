@@ -5340,7 +5340,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 1.75rem auto;
   }
 
@@ -5356,15 +5356,15 @@ textarea.form-control-lg {
     max-width: 300px;
   }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
   }
-}
+} */
 @media (min-width: 1200px) {
   .modal-xl {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 .modal-fullscreen {

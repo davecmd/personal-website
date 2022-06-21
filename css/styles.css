@@ -25,7 +25,7 @@
 }
 
 ::selection {
-  background: #7ec4cf;
+  background: #5cc8db;
 }
 
 body {
@@ -199,8 +199,9 @@ h1 {
 }
 
 .card {
-  height: 400px;
+  height: 450px;
   border: none;
+  background-color: #eee;;
 }
 
 .row {
@@ -209,9 +210,13 @@ h1 {
 }
 
 .work-card-image {
-  height: 100%;
-  width: 100%;
+  object-fit: contain;
+  max-width: 75%;
+  height: auto;
+  margin: auto;
+
 }
+
 
 .card-img-overlay {
   opacity: 0;
@@ -220,11 +225,16 @@ h1 {
 
 #placeholder-card:hover > .card-img-overlay {
   display: block;
-  background-color: rgb(126, 196, 207, 0.7);
+  background-color: rgb(30, 139, 156, 0.8);
   opacity: 1;
 }
 
 /* Modal */
+.work-modal-image {
+  height: 100%;
+  width: 100%;
+}
+
 .modal-header {
   border-bottom: 0 none;
 }
@@ -244,7 +254,7 @@ h1 {
 }
 
 .modal-content {
-  margin: 10px 50px;
+  margin: 10px 100px;
   background-color: var(--primary-color);
 }
 
@@ -259,6 +269,7 @@ h1 {
 .modal-body {
   margin: 5px 30px;
 }
+
 
 /* navigation menu animation */
 nav a {
@@ -405,7 +416,7 @@ nav a {
 /* Screen Responsiveness */
 @media (max-width: 1000px) {
   .container {
-    margin-top: 50px;
+    margin-top: 140px;
     margin-bottom: 150px;
     padding-right: min(75px, 10%);
     padding-left: min(75px, 10%);
@@ -415,8 +426,8 @@ nav a {
     text-align: center;
   }
 
-  .card {
-    height: 350px;
+  h1 {
+    font-size: 2.25rem;
   }
 
   .modal-button {
@@ -434,14 +445,17 @@ nav a {
 
 @media (max-width: 700px) {
   .container {
-    margin-top: 140px;
     margin-bottom: 150px;
     padding-right: min(75px, 10%);
     padding-left: min(75px, 10%);
   }
 
   .card {
-    height: 250px;
+    height: 350px;
+  }
+
+  .modal-content {
+    margin: 0px 50px;
   }
 }
 
