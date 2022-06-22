@@ -17,11 +17,14 @@
 :root {
   --primary-color: white;
   --secondary-color: #212529;
+  --card-background-color: #eee;
 }
 
 .dark-theme {
   --primary-color: #212529;
   --secondary-color: white;
+  --card-background-color: 	#4f5b66;
+
 }
 
 ::selection {
@@ -186,7 +189,7 @@ h1 {
   color: var(--secondary-color);
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  transition: color 0.21s ease-in-out, box-shadow 0.3s ease-in-out;
+ /* transition: color 0.21s ease-in-out, box-shadow 0.3s ease-in-out;*/
 }
 #email:hover {
   box-shadow: inset 300px 0 0 0 var(--secondary-color);
@@ -201,7 +204,7 @@ h1 {
 .card {
   height: 450px;
   border: none;
-  background-color: #eee;;
+  background-color: var(--card-background-color);
 }
 
 .row {
