@@ -46,14 +46,22 @@ a:link {
   text-decoration: none;
 }
 
+a:hover {
+  cursor:pointer;
+ }
+
 .navbar-toggler {
   border: none;
 }
 
 svg {
   width: 1.3rem;
-  fill: white;
+  fill: var(--secondary-color);
   padding-bottom: 4px;
+}
+
+.svg-link:hover {
+  fill: #0d6efd;
 }
 
 header {
@@ -262,7 +270,8 @@ h1 {
 }
 
 .modal-title {
-  font-weight: 600;
+  font-weight: 400;
+  padding-bottom: 15px;
 }
 
 #modal-close {
@@ -273,6 +282,10 @@ h1 {
   margin: 5px 30px;
 }
 
+
+.project-description {
+  font-weight: 5600px;
+}
 
 /* navigation menu animation */
 nav a {
